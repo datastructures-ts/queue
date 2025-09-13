@@ -1,0 +1,40 @@
+{
+  "name": "@datastructures-ts/queue",
+  "version": "4.2.5",
+  "description": "a performant queue implementation in typescript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "pnpm run build && vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'",
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatefrad/queue.git"
+  },
+  "keywords": [
+    "queue",
+    "queue typescript",
+    "typescript",
+    "data structures",
+    "fifo"
+  ],
+  "author": "Hatef Rad <hatefrad@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hatefrad/queue/issues"
+  },
+  "homepage": "https://github.com/hatefrad/queue#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "typescript": "^4.9.0",
+    "vitest": "^3.2.4"
+  }
+}
